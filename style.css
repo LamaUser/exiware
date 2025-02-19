@@ -1,0 +1,61 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #222;
+    color: white;
+}
+
+/* Flashing Logo */
+#logo {
+    font-size: 40px;
+    animation: flash 1s infinite;
+}
+
+@keyframes flash {
+    0% { color: red; }
+    50% { color: yellow; }
+    100% { color: red; }
+}
+
+/* Authentication & Chat Sections */
+#chat, #auth {
+    margin: 20px auto;
+    width: 300px;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Input Fields and Buttons */
+input, button {
+    display: block;
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+button {
+    background: #ffcc00;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #ffaa00;
+}
+
+/* Chat Messages */
+#messages {
+    border: 1px solid white;
+    min-height: 200px;
+    max-height: 300px;
+    overflow-y: auto;
+    padding: 10px;
+    background: black;
+    text-align: left;
+}
