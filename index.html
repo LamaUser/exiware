@@ -1,38 +1,34 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FlashChat</title>
+    <title>Flashy Bio Link</title>
     <link rel="stylesheet" href="styles.css">
-    <script defer src="/socket.io/socket.io.js"></script>
-    <script defer src="script.js"></script>
 </head>
 <body>
 
-    <!-- Flashing Logo -->
-    <h1 id="logo">⚡ FlashChat ⚡</h1>
-
-    <!-- Background Music -->
+    <!-- Background Music (Forced Loop) -->
     <audio autoplay loop>
         <source src="music.mp3" type="audio/mp3">
     </audio>
 
-    <!-- Authentication Section -->
-    <div id="auth">
-        <h2>Login / Sign Up</h2>
-        <input type="text" id="username" placeholder="Username">
-        <input type="password" id="password" placeholder="Password">
-        <button onclick="signup()">Sign Up</button>
-        <button onclick="login()">Login</button>
-    </div>
+    <div class="container">
+        <!-- Profile Image -->
+        <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
 
-    <!-- Chatbox -->
-    <div id="chat" style="display: none;">
-        <h2>Chat Room</h2>
-        <div id="messages"></div>
-        <input type="text" id="messageInput" placeholder="Type a message...">
-        <button onclick="sendMessage()">Send</button>
+        <!-- Name / Bio -->
+        <h1 class="name">Your Name</h1>
+        <p class="bio">Welcome to my world! 🌟 Click below to explore.</p>
+
+        <!-- Link Buttons -->
+        <div class="links">
+            <a href="https://github.com/" target="_blank" class="link">GitHub</a>
+            <a href="https://twitter.com/" target="_blank" class="link">Twitter</a>
+            <a href="https://instagram.com/" target="_blank" class="link">Instagram</a>
+            <a href="https://youtube.com/" target="_blank" class="link">YouTube</a>
+        </div>
     </div>
 
 </body>
